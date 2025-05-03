@@ -351,8 +351,8 @@ font: 900 8pt &quot;Segoe UI&quot;;</string>
   <widget class="QCheckBox" name="checkBox_10">
    <property name="geometry">
     <rect>
-     <x>50</x>
-     <y>580</y>
+     <x>10</x>
+     <y>480</y>
      <width>141</width>
      <height>31</height>
     </rect>
@@ -361,14 +361,14 @@ font: 900 8pt &quot;Segoe UI&quot;;</string>
     <string notr="true">background:none</string>
    </property>
    <property name="text">
-    <string>300VND to 400VND</string>
+    <string>4 Star and Up</string>
    </property>
   </widget>
   <widget class="QCheckBox" name="checkBox_9">
    <property name="geometry">
     <rect>
-     <x>40</x>
-     <y>650</y>
+     <x>10</x>
+     <y>590</y>
      <width>141</width>
      <height>31</height>
     </rect>
@@ -377,7 +377,7 @@ font: 900 8pt &quot;Segoe UI&quot;;</string>
     <string notr="true">background:none</string>
    </property>
    <property name="text">
-    <string>300VND to 400VND</string>
+    <string>Intel</string>
    </property>
   </widget>
   <widget class="QCheckBox" name="checkBox_11">
@@ -416,8 +416,8 @@ font: 900 8pt &quot;Segoe UI&quot;;</string>
   <widget class="QCheckBox" name="checkBox_12">
    <property name="geometry">
     <rect>
-     <x>40</x>
-     <y>700</y>
+     <x>10</x>
+     <y>680</y>
      <width>141</width>
      <height>31</height>
     </rect>
@@ -426,7 +426,7 @@ font: 900 8pt &quot;Segoe UI&quot;;</string>
     <string notr="true">background:none</string>
    </property>
    <property name="text">
-    <string>300VND to 400VND</string>
+    <string>AM5</string>
    </property>
   </widget>
   <widget class="QCheckBox" name="checkBox_13">
@@ -459,7 +459,153 @@ font: 900 8pt &quot;Segoe UI&quot;;</string>
 font: 900 8pt &quot;Segoe UI&quot;;</string>
    </property>
    <property name="text">
-    <string>Brand:</string>
+    <string>Average Rating:</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBox_14">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>500</y>
+     <width>141</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background:none</string>
+   </property>
+   <property name="text">
+    <string>3 Star and Up</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBox_15">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>520</y>
+     <width>141</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background:none</string>
+   </property>
+   <property name="text">
+    <string>2 Star and Up</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBox_16">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>540</y>
+     <width>141</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background:none</string>
+   </property>
+   <property name="text">
+    <string>1 Star and up</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_11">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>560</y>
+     <width>141</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">  background:none;
+font: 900 8pt &quot;Segoe UI&quot;;</string>
+   </property>
+   <property name="text">
+    <string>CPU Brand:</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBox_17">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>610</y>
+     <width>141</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background:none</string>
+   </property>
+   <property name="text">
+    <string>AMD</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBox_18">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>630</y>
+     <width>141</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background:none</string>
+   </property>
+   <property name="text">
+    <string>Others...</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_12">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>650</y>
+     <width>141</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">  background:none;
+font: 900 8pt &quot;Segoe UI&quot;;</string>
+   </property>
+   <property name="text">
+    <string>Socket Type:</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBox_19">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>700</y>
+     <width>141</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background:none</string>
+   </property>
+   <property name="text">
+    <string>LGA 1700 </string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBox_20">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>720</y>
+     <width>141</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background:none</string>
+   </property>
+   <property name="text">
+    <string>LGA 1851 </string>
    </property>
   </widget>
   <zorder>label</zorder>
@@ -487,6 +633,15 @@ font: 900 8pt &quot;Segoe UI&quot;;</string>
   <zorder>checkBox_12</zorder>
   <zorder>checkBox_13</zorder>
   <zorder>label_10</zorder>
+  <zorder>checkBox_14</zorder>
+  <zorder>checkBox_15</zorder>
+  <zorder>checkBox_16</zorder>
+  <zorder>label_11</zorder>
+  <zorder>checkBox_17</zorder>
+  <zorder>checkBox_18</zorder>
+  <zorder>label_12</zorder>
+  <zorder>checkBox_19</zorder>
+  <zorder>checkBox_20</zorder>
  </widget>
  <resources/>
  <connections/>
