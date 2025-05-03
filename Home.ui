@@ -19,9 +19,9 @@
   <widget class="QStackedWidget" name="stackedWidget">
    <property name="geometry">
     <rect>
-     <x>150</x>
+     <x>160</x>
      <y>70</y>
-     <width>711</width>
+     <width>871</width>
      <height>731</height>
     </rect>
    </property>
@@ -29,8 +29,8 @@
     <widget class="QLabel" name="label_3">
      <property name="geometry">
       <rect>
-       <x>20</x>
-       <y>-10</y>
+       <x>30</x>
+       <y>20</y>
        <width>521</width>
        <height>381</height>
       </rect>
@@ -45,6 +45,29 @@
       <bool>true</bool>
      </property>
     </widget>
+    <widget class="QPushButton" name="pushButton_3">
+     <property name="geometry">
+      <rect>
+       <x>570</x>
+       <y>10</y>
+       <width>271</width>
+       <height>401</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>Img/Product_01.png</normaloff>Img/Product_01.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>400</width>
+       <height>400</height>
+      </size>
+     </property>
+    </widget>
    </widget>
    <widget class="QWidget" name="page_3"/>
    <widget class="QWidget" name="page_2"/>
@@ -53,7 +76,7 @@
    <property name="geometry">
     <rect>
      <x>-10</x>
-     <y>-10</y>
+     <y>0</y>
      <width>1071</width>
      <height>71</height>
     </rect>
