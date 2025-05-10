@@ -111,7 +111,7 @@ border-radius: 20px;                    /* Curved edges */
     <string>Enter Username Here</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="txt_enaill">
+  <widget class="QLineEdit" name="txt_email">
    <property name="geometry">
     <rect>
      <x>330</x>
@@ -211,7 +211,7 @@ border-radius: 20px;                    /* Curved edges */
     <string>Enter Password</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="txt_confrom_password">
+  <widget class="QLineEdit" name="txt_confirm_password">
    <property name="geometry">
     <rect>
      <x>330</x>
@@ -274,10 +274,10 @@ border-radius: 20px;                    /* Curved edges */
   <widget class="QCheckBox" name="checkBox">
    <property name="geometry">
     <rect>
-     <x>280</x>
-     <y>550</y>
-     <width>651</width>
-     <height>141</height>
+     <x>320</x>
+     <y>580</y>
+     <width>331</width>
+     <height>51</height>
     </rect>
    </property>
    <property name="font">
@@ -289,7 +289,8 @@ border-radius: 20px;                    /* Curved edges */
     <string notr="true">Color:rgb(255, 255, 255)</string>
    </property>
    <property name="text">
-    <string>I certify that I am at least 18 years old and of lawful age and i have read the privacy policy and agree </string>
+    <string>I certify that I am at least 18 years old and of lawful age and 
+ i have read the privacy policy and agree </string>
    </property>
   </widget>
   <widget class="QPushButton" name="btn_sign_up">
@@ -338,7 +339,7 @@ border-radius: 10px;
     <string>Aready have a account,Click</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="log_in">
+  <widget class="QPushButton" name="btn_login">
    <property name="geometry">
     <rect>
      <x>480</x>
@@ -363,7 +364,7 @@ border-radius: 10px;
     <string>Log In</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton">
+  <widget class="QPushButton" name="btn_eye">
    <property name="geometry">
     <rect>
      <x>590</x>
@@ -386,7 +387,7 @@ border-radius: 10px;
     </size>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_2">
+  <widget class="QPushButton" name="btn_eye_cp">
    <property name="geometry">
     <rect>
      <x>590</x>

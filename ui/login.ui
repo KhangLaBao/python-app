@@ -94,7 +94,7 @@ border-radius: 20px;                    /* Curved edges */
     <string>Log On</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="txt_username">
+  <widget class="QLineEdit" name="txt_email">
    <property name="geometry">
     <rect>
      <x>330</x>
@@ -149,7 +149,7 @@ border-radius: 20px;                    /* Curved edges */
     <string notr="true">Color:rgb(255, 255, 255)</string>
    </property>
    <property name="text">
-    <string>Username</string>
+    <string>Email</string>
    </property>
   </widget>
   <widget class="QLabel" name="label_7">
@@ -173,7 +173,7 @@ border-radius: 20px;                    /* Curved edges */
     <string>Enter Password</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="sign_up">
+  <widget class="QPushButton" name="btn_sign_up">
    <property name="geometry">
     <rect>
      <x>490</x>
@@ -219,7 +219,7 @@ border-radius: 10px;
     <string>Dont have a account?</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_2">
+  <widget class="QPushButton" name="btn_login">
    <property name="geometry">
     <rect>
      <x>330</x>
@@ -244,7 +244,7 @@ border-radius: 10px;
     <string>Log In</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton">
+  <widget class="QPushButton" name="btn_eye">
    <property name="geometry">
     <rect>
      <x>590</x>

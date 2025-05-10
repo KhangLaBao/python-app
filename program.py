@@ -1,45 +1,45 @@
 from PyQt6.QtWidgets import *
 from PyQt6.QtCore import *
-from PyQt.6 import gui
 from PyQt6 import uic
+from PyQt6.QtGui import *
 
-class alert(QMessageBox):
+class Alert(QMessageBox):
     def error_message(self, title, message):
-        self.setIcon(QMessageBox.icon.Critical)
+        self.setIcon(QMessageBox.Icon.Critical)
         self.setWindowTitle(title)
         self.setText(message)
         self.exec()
 
     def success_message(self, title, message):
-        self.setIcon(QMessageBox.icon.Information)
+        self.setIcon(QMessageBox.Icon.Information)
         self.setWindowTitle(title)
         self.setText(message)
         self.exec()
 
-msg = alert()
 
-class login(QWidget):
+class Login(QWidget):
     def __init__(self):
         super().__init__()
-        uic.loadUi("login.ui", self)
+        uic.loadUi("ui/login.ui", self)
 
         self.email_input = self.findChild(QLineEdit,"txt_email")
-        self.password_input = self.findChild(QLineEdit,"txt_passport")
-        self.btn_log_in = self.findChild(QLineEdit,"btn_log_in")
-        self.btn_sign_up = self.findChild(QLineEdit,"btn_sign_up")
-        self.btn_eye = self.findChild(QLineEdit,"btn_eye")
+        self.password_input = self.findChild(QLineEdit, "txt_password")
+        self.btn_login = self.findChild(QPushButton,"btn_login")
+        self.btn_sign_up = self.findChild(QPushButton,"btn_sign_up")
+        self.btn_eye = self.findChild(QPushButton,"btn_eye")
         
-        self.btn_eyes.clicked.connect(lambda: self.show_password(self.btn_eye, self.password_input))
+        self.btn_eye.clicked.connect(lambda: self.show_password(self.btn_eye, self.password_input))
         self.btn_login.clicked.connect(self.login)
+        self.btn_sign_up.clicked.connect(self.show_register)
     
-    def show_password(self,button: QPushButton, Input: QLineEdit):
-        if input.echoMode() == QLineEdit.EchoMode.Password:
-            input.setEchoMode(QlineEdit.EchoMode.Normal)
-            button.setIcon(QIcon("img/Eyes-solid.svg"))
+    def show_password(self, button: QPushButton, Input: QLineEdit):
+        if Input.echoMode() == QLineEdit.EchoMode.Password:
+            Input.setEchoMode(QLineEdit.EchoMode.Normal)
+            button.setIcon(QIcon("img/eye-regular.svg"))
         else:
-           input.setEchoMode(QlineEdit.EchoMode.Password)
-            button.setIcon(QIcon("img/eyes-slash-solid.svg")) 
-           
+            Input.setEchoMode(QLineEdit.EchoMode.Password)
+            button.setIcon(QIcon("img/eye-slash-regular.svg"))
+
     def login(self):
         email = self.email_input.text().strip()
         password = self.password_input.text().strip()
@@ -54,92 +54,113 @@ class login(QWidget):
             self.password_input.setFocus()
             return
         
-    with open("data/user.txt", "r") as file:
-        for line in file:
-            data = line.strip().split()(" , ")
-            if data[0] == email and data [1] == password:
-                msg.success_message("Login","Welcome to the system")
-                return
+        with open("data/users.txt", "r") as file:
+            for line in file:
+                data = line.strip().split(",")
+                if data[0] == email and data[1] == password:
+                    msg.success_message("Login", "Welcome to the system")
+                    self.show_home()
+                    return
             
-        msg.error_message("login", "Invailed email or password")
-       self.email_input.setFocus()
+            msg.error_message("Login", "Invalid email or password")
+            self.email_input.setFocus()
+        
+        
     
-    def show_home
+    def show_home(self):
+        self.home = Home()
+        self.home.show()
+        self.close()
 
-
-
-
-
-
-
-
+    def show_register(self):
+        self.register = Register()
+        self.register.show()
+        self.close()
 
 class Register(QWidget):
     def __init__(self):
         super().__init__()
-        uic.loadUi("ui/register", self)
+        uic.loadUi("ui/register.ui", self)
 
-        self.email_input = self.findChild(QLineEdit,"txt_email")
-        self.password_input = self.findChild(QLineEdit,"txt_passport")
-        self.btn_log_in = self.findChild(QLineEdit,"btn_log_in")
-        self.btn_sign_up = self.findChild(QLineEdit,"btn_sign_up")
-        self.btn_eye = self.findChild(QLineEdit,"btn_eye")
+        self.email_input = self.findChild(QLineEdit, "txt_email")
+        self.password_input = self.findChild(QLineEdit, "txt_password")
+        self.confirm_pass_input = self.findChild(QLineEdit, "txt_confirm_password")
+        self.name_input = self.findChild(QLineEdit, "txt_name")
+        self.btn_login = self.findChild(QPushButton, "btn_login")
+        self.btn_sign_up = self.findChild(QPushButton, "btn_sign_up")
+        self.btn_eye = self.findChild(QPushButton, "btn_eye")
+        self.btn_eye_cp = self.findChild(QPushButton, "btn_eye_cp")
 
-             
-        self.btn_eyes.clicked.connect(lambda: self.show_password(self.btn_eye_p, self.password_input))
-        self.btn_login.clicked.connect(lambda: self.show_password(self.btn_eye_cp,confirm_pass_input))
-
- def show_password(self,button: QPushButton, Input: QLineEdit):
-        if input.echoMode() == QLineEdit.EchoMode.Password:
-            input.setEchoMode(QlineEdit.EchoMode.Normal)
-            button.setIcon(QIcon("img/Eyes-solid.svg"))
+        self.btn_eye.clicked.connect(lambda: self.show_password(self.btn_eye, self.password_input))
+        self.btn_eye_cp.clicked.connect(lambda: self.show_password(self.btn_eye_cp, self.confirm_pass_input))
+        self.btn_sign_up.clicked.connect(self.register)
+        self.btn_login.clicked.connect(self.show_login)
+    def show_password(self, button: QPushButton, Input: QLineEdit):
+        if Input.echoMode() == QLineEdit.EchoMode.Password:
+            Input.setEchoMode(QLineEdit.EchoMode.Normal)
+            button.setIcon(QIcon("img/eye-regular.svg"))
         else:
-           input.setEchoMode(QlineEdit.EchoMode.Password)
-            button.setIcon(QIcon("img/eyes-slash-solid.svg")) 
-           
-    def login(self):
+            Input.setEchoMode(QLineEdit.EchoMode.Password)
+            button.setIcon(QIcon("img/eye-slash-regular.svg"))
+
+    def register(self):
         email = self.email_input.text().strip()
         password = self.password_input.text().strip()
+        confirm_pass = self.confirm_pass_input.text().strip()
+        name = self.name_input.text().strip()
 
         if email == "":
-            msg.error_message("Login", "Email is required")
+            msg.error_message("Register", "Email is required")
             self.email_input.setFocus()
             return
         
-          if name == "":
-            msg.error_message("Login", "Nme is required")
+        if name == "":
+            msg.error_message("Register", "Name is required")
             self.name_input.setFocus()
             return
         
         if password == "":
-            msg.error_message("Login", "Password is required")
+            msg.error_message("Register", "Password is required")
             self.password_input.setFocus()
             return
 
-
-
-
-
-  if confrom_pass == "":
-            msg.error_message("Login", "Confrom Password is required")
-            self.pconfrom_pass_input.setFocus()
+        if confirm_pass == "":
+            msg.error_message("Register", "Confirm Password is required")
+            self.confirm_pass_input.setFocus()
             return
 
-  if password != confrom_pass:
-            msg.error_message("Login", "Password and Confrom password do not match")
+        if password != confirm_pass:
+            msg.error_message("Register", "Password and Confirm password do not match")
             self.password_input.setFocus()
             return
 
-        with open("data/user.txt", "r") as file:
+        with open("data/users.txt", "r") as file:
             for line in file:
                 data = line.strip().split(",")
-                if data [0] = email:
-                    msg.error_message("Login","Email already exists")
-                    selff.email_inpuit.setFocus()
+                if data[0] == email:
+                    msg.error_message("Register", "Email already exists")
+                    self.email_input.setFocus()
                     return
                 
-        with open("data/user.txt", "a") as file:
-            file.write(f"{email},{password}",{name}\n")
-                       
-        msg.success_message("Login", "Account created successfully")
-            self.show_login       
+        with open("data/users.txt", "a") as file:
+            file.write(f"{email},{password},{name}\n")
+
+        msg.success_message("Register", "Account created successfully")
+        self.show_login()
+
+    def show_login(self):
+        self.login = Login()
+        self.login.show()
+        self.close()
+
+class Home(QWidget):
+    def __init__(self):
+        super().__init__()
+        uic.loadUi("ui/home.ui", self)
+
+if __name__ == "__main__":
+    app = QApplication([])
+    msg = Alert()
+    window = Login()
+    window.show()
+    app.exec()
