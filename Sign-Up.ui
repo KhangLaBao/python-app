@@ -94,7 +94,7 @@ border-radius: 20px;                    /* Curved edges */
     <string>Sign Up</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit">
+  <widget class="QLineEdit" name="txt_name">
    <property name="geometry">
     <rect>
      <x>330</x>
@@ -111,7 +111,7 @@ border-radius: 20px;                    /* Curved edges */
     <string>Enter Username Here</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit_2">
+  <widget class="QLineEdit" name="txt_enaill">
    <property name="geometry">
     <rect>
      <x>330</x>
@@ -128,7 +128,7 @@ border-radius: 20px;                    /* Curved edges */
     <string>Enter Email of Phone Number</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit_3">
+  <widget class="QLineEdit" name="txt_password">
    <property name="geometry">
     <rect>
      <x>330</x>
@@ -211,7 +211,7 @@ border-radius: 20px;                    /* Curved edges */
     <string>Enter Password</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit_4">
+  <widget class="QLineEdit" name="txt_confrom_password">
    <property name="geometry">
     <rect>
      <x>330</x>
@@ -250,25 +250,6 @@ border-radius: 20px;                    /* Curved edges */
    </property>
    <property name="text">
     <string>Confrom Password</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_9">
-   <property name="geometry">
-    <rect>
-     <x>590</x>
-     <y>450</y>
-     <width>41</width>
-     <height>41</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-   <property name="pixmap">
-    <pixmap>Img/eyes_02.png</pixmap>
-   </property>
-   <property name="scaledContents">
-    <bool>true</bool>
    </property>
   </widget>
   <widget class="QLabel" name="label_10">
@@ -311,7 +292,7 @@ border-radius: 20px;                    /* Curved edges */
     <string>I certify that I am at least 18 years old and of lawful age and i have read the privacy policy and agree </string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton">
+  <widget class="QPushButton" name="btn_sign_up">
    <property name="geometry">
     <rect>
      <x>320</x>
@@ -357,7 +338,7 @@ border-radius: 10px;
     <string>Aready have a account,Click</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_2">
+  <widget class="QPushButton" name="log_in">
    <property name="geometry">
     <rect>
      <x>480</x>
@@ -380,6 +361,52 @@ border-radius: 10px;
    </property>
    <property name="text">
     <string>Log In</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_eyes">
+   <property name="geometry">
+    <rect>
+     <x>590</x>
+     <y>550</y>
+     <width>41</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>Img/eyes_02.png</normaloff>Img/eyes_02.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>64</width>
+     <height>64</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>590</x>
+     <y>460</y>
+     <width>41</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>Img/eyes_02.png</normaloff>Img/eyes_02.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>64</width>
+     <height>64</height>
+    </size>
    </property>
   </widget>
  </widget>
