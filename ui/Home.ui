@@ -25,6 +25,9 @@
      <height>731</height>
     </rect>
    </property>
+   <property name="currentIndex">
+    <number>2</number>
+   </property>
    <widget class="QWidget" name="page">
     <widget class="QLabel" name="label_3">
      <property name="geometry">
@@ -39,7 +42,7 @@
       <string/>
      </property>
      <property name="pixmap">
-      <pixmap>Img/webp_0428_TOPDEALS_824615_MSI_LaptopH3299.jpg</pixmap>
+      <pixmap>../Img/webp_0428_TOPDEALS_824615_MSI_LaptopH3299.jpg</pixmap>
      </property>
      <property name="scaledContents">
       <bool>true</bool>
@@ -48,11 +51,14 @@
     <widget class="QFrame" name="frame">
      <property name="geometry">
       <rect>
-       <x>180</x>
-       <y>160</y>
-       <width>171</width>
-       <height>231</height>
+       <x>10</x>
+       <y>420</y>
+       <width>501</width>
+       <height>271</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(112, 112, 112);</string>
      </property>
      <property name="frameShape">
       <enum>QFrame::Shape::StyledPanel</enum>
@@ -60,37 +66,310 @@
      <property name="frameShadow">
       <enum>QFrame::Shadow::Raised</enum>
      </property>
+     <widget class="QLabel" name="label_13">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>491</width>
+        <height>271</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>../Img/Lightgray.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_31">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>151</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 600 9pt &quot;Segoe UI&quot;;
+color:rgb(0, 0, 0);
+background:none
+</string>
+      </property>
+      <property name="text">
+       <string>Top Deals By Category</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_3">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>141</width>
+        <height>231</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../Img/Button 1.png</normaloff>../Img/Button 1.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>250</width>
+        <height>250</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_4">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>30</y>
+        <width>141</width>
+        <height>231</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../Img/Button 2.png</normaloff>../Img/Button 2.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>250</width>
+        <height>250</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_13">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>30</y>
+        <width>141</width>
+        <height>231</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../Img/button 3.png</normaloff>../Img/button 3.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>250</width>
+        <height>250</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_33">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>461</width>
+        <height>231</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>../Img/lightgray01.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <zorder>label_13</zorder>
+     <zorder>label_31</zorder>
+     <zorder>label_33</zorder>
+     <zorder>pushButton_13</zorder>
+     <zorder>pushButton_4</zorder>
+     <zorder>pushButton_3</zorder>
     </widget>
-    <widget class="QLabel" name="label_13">
+    <widget class="QFrame" name="frame_2">
      <property name="geometry">
       <rect>
-       <x>30</x>
-       <y>430</y>
-       <width>461</width>
-       <height>251</height>
+       <x>570</x>
+       <y>30</y>
+       <width>271</width>
+       <height>411</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(112, 112, 112);</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Shape::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Shadow::Raised</enum>
+     </property>
+     <widget class="QPushButton" name="pushButton_16">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>241</width>
+        <height>141</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../Img/button 5.png</normaloff>../Img/button 5.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>250</width>
+        <height>250</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_35">
+      <property name="geometry">
+       <rect>
+        <x>-90</x>
+        <y>-90</y>
+        <width>271</width>
+        <height>371</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>../Img/lightgray01.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_15">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>160</y>
+        <width>131</width>
+        <height>241</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../Img/button4.png</normaloff>../Img/button4.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>250</width>
+        <height>250</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_34">
+      <property name="geometry">
+       <rect>
+        <x>-200</x>
+        <y>0</y>
+        <width>491</width>
+        <height>431</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>../Img/lightgray01.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_14">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>160</y>
+        <width>141</width>
+        <height>241</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../Img/button4.png</normaloff>../Img/button4.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>250</width>
+        <height>250</height>
+       </size>
+      </property>
+     </widget>
+     <zorder>label_34</zorder>
+     <zorder>label_35</zorder>
+     <zorder>pushButton_16</zorder>
+     <zorder>pushButton_15</zorder>
+     <zorder>pushButton_14</zorder>
+    </widget>
+    <widget class="QLabel" name="label_36">
+     <property name="geometry">
+      <rect>
+       <x>520</x>
+       <y>440</y>
+       <width>321</width>
+       <height>231</height>
       </rect>
      </property>
      <property name="text">
       <string/>
      </property>
      <property name="pixmap">
-      <pixmap>Img/Lightgray.png</pixmap>
+      <pixmap>../Img/continebrosweing.png</pixmap>
      </property>
      <property name="scaledContents">
       <bool>true</bool>
      </property>
     </widget>
-    <widget class="QLabel" name="label_31">
+    <widget class="QPushButton" name="pushButton_17">
      <property name="geometry">
       <rect>
-       <x>40</x>
-       <y>430</y>
-       <width>49</width>
-       <height>16</height>
+       <x>530</x>
+       <y>490</y>
+       <width>161</width>
+       <height>181</height>
       </rect>
      </property>
      <property name="text">
-      <string>Top Deals By </string>
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>../Img/how-to-donate-computer-1-500x500.png</normaloff>../Img/how-to-donate-computer-1-500x500.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>180</width>
+       <height>180</height>
+      </size>
      </property>
     </widget>
    </widget>
@@ -111,7 +390,7 @@
       <string/>
      </property>
      <property name="pixmap">
-      <pixmap>Img/how-to-donate-computer-1-500x5002.png</pixmap>
+      <pixmap>../Img/how-to-donate-computer-1-500x5002.png</pixmap>
      </property>
      <property name="scaledContents">
       <bool>true</bool>
@@ -466,6 +745,190 @@ Compu-Shop Insider® Credit Card. (regular terms apply)
 Learn More</string>
      </property>
     </widget>
+    <widget class="QLabel" name="label_32">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>90</y>
+       <width>141</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-color: rgb(0, 0, 0);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap>../Img/4.1 star.png</pixmap>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="page_4">
+    <widget class="QLabel" name="label_37">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>110</y>
+       <width>191</width>
+       <height>201</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap>../Img/user-regular.svg</pixmap>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_38">
+     <property name="geometry">
+      <rect>
+       <x>350</x>
+       <y>110</y>
+       <width>211</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 600 18pt &quot;Segoe UI&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Name:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_39">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>10</y>
+       <width>161</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">  background:none;
+font: 900 24pt &quot;Segoe UI&quot;;</string>
+     </property>
+     <property name="text">
+      <string>User Info:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_40">
+     <property name="geometry">
+      <rect>
+       <x>350</x>
+       <y>170</y>
+       <width>211</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 600 18pt &quot;Segoe UI&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Age:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_41">
+     <property name="geometry">
+      <rect>
+       <x>560</x>
+       <y>170</y>
+       <width>211</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 600 18pt &quot;Segoe UI&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Gender:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_42">
+     <property name="geometry">
+      <rect>
+       <x>350</x>
+       <y>240</y>
+       <width>211</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 600 18pt &quot;Segoe UI&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Email:</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_19">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>330</y>
+       <width>141</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Click to change avatar!</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_43">
+     <property name="geometry">
+      <rect>
+       <x>330</x>
+       <y>100</y>
+       <width>451</width>
+       <height>221</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap>../Img/square.png</pixmap>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_44">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>100</y>
+       <width>221</width>
+       <height>221</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap>../Img/square.png</pixmap>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <zorder>label_44</zorder>
+    <zorder>label_43</zorder>
+    <zorder>label_37</zorder>
+    <zorder>label_38</zorder>
+    <zorder>label_39</zorder>
+    <zorder>label_40</zorder>
+    <zorder>label_41</zorder>
+    <zorder>label_42</zorder>
+    <zorder>pushButton_19</zorder>
    </widget>
    <widget class="QWidget" name="page_2">
     <widget class="QLabel" name="label_14">
@@ -499,7 +962,7 @@ font: 900 20pt &quot;Segoe UI&quot;;</string>
      </property>
      <property name="icon">
       <iconset>
-       <normaloff>Img/how-to-donate-computer-1-500x500.png</normaloff>Img/how-to-donate-computer-1-500x500.png</iconset>
+       <normaloff>../Img/how-to-donate-computer-1-500x500.png</normaloff>../Img/how-to-donate-computer-1-500x500.png</iconset>
      </property>
      <property name="iconSize">
       <size>
@@ -522,7 +985,7 @@ font: 900 20pt &quot;Segoe UI&quot;;</string>
      </property>
      <property name="icon">
       <iconset>
-       <normaloff>Img/images (1).jpg</normaloff>Img/images (1).jpg</iconset>
+       <normaloff>../Img/images (1).jpg</normaloff>../Img/images (1).jpg</iconset>
      </property>
      <property name="iconSize">
       <size>
@@ -545,7 +1008,7 @@ font: 900 20pt &quot;Segoe UI&quot;;</string>
      </property>
      <property name="icon">
       <iconset>
-       <normaloff>Img/images (2).jpg</normaloff>Img/images (2).jpg</iconset>
+       <normaloff>../Img/images (2).jpg</normaloff>../Img/images (2).jpg</iconset>
      </property>
      <property name="iconSize">
       <size>
@@ -568,7 +1031,7 @@ font: 900 20pt &quot;Segoe UI&quot;;</string>
      </property>
      <property name="icon">
       <iconset>
-       <normaloff>Img/images.jpg</normaloff>Img/images.jpg</iconset>
+       <normaloff>../Img/images.jpg</normaloff>../Img/images.jpg</iconset>
      </property>
      <property name="iconSize">
       <size>
@@ -591,7 +1054,7 @@ font: 900 20pt &quot;Segoe UI&quot;;</string>
      </property>
      <property name="icon">
       <iconset>
-       <normaloff>Img/LB2000_991x.progressive.jpg</normaloff>Img/LB2000_991x.progressive.jpg</iconset>
+       <normaloff>../Img/LB2000_991x.progressive.jpg</normaloff>../Img/LB2000_991x.progressive.jpg</iconset>
      </property>
      <property name="iconSize">
       <size>
@@ -615,7 +1078,7 @@ font: 900 20pt &quot;Segoe UI&quot;;</string>
     <string/>
    </property>
    <property name="pixmap">
-    <pixmap>Img/graybar.png</pixmap>
+    <pixmap>../Img/graybar.png</pixmap>
    </property>
    <property name="scaledContents">
     <bool>true</bool>
@@ -634,7 +1097,7 @@ font: 900 20pt &quot;Segoe UI&quot;;</string>
     <string/>
    </property>
    <property name="pixmap">
-    <pixmap>Img/Logo.png</pixmap>
+    <pixmap>../Img/Logo.png</pixmap>
    </property>
    <property name="scaledContents">
     <bool>true</bool>
@@ -692,7 +1155,7 @@ background-color: rgb(255, 255, 255);
     <string/>
    </property>
    <property name="pixmap">
-    <pixmap>Img/Lightgray.png</pixmap>
+    <pixmap>../Img/Lightgray.png</pixmap>
    </property>
    <property name="scaledContents">
     <bool>true</bool>
@@ -731,7 +1194,7 @@ font: 900 8pt &quot;Segoe UI&quot;;</string>
     <string/>
    </property>
    <property name="pixmap">
-    <pixmap>Img/Lightgray.png</pixmap>
+    <pixmap>../Img/Lightgray.png</pixmap>
    </property>
    <property name="scaledContents">
     <bool>true</bool>
@@ -1161,6 +1624,32 @@ font: 900 8pt &quot;Segoe UI&quot;;</string>
     <string>LGA 1851 </string>
    </property>
   </widget>
+  <widget class="QPushButton" name="pushButton_18">
+   <property name="geometry">
+    <rect>
+     <x>940</x>
+     <y>10</y>
+     <width>71</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../Img/user-regular.svg</normaloff>../Img/user-regular.svg</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>32</width>
+     <height>32</height>
+    </size>
+   </property>
+  </widget>
   <zorder>label</zorder>
   <zorder>stackedWidget</zorder>
   <zorder>label_2</zorder>
@@ -1195,6 +1684,7 @@ font: 900 8pt &quot;Segoe UI&quot;;</string>
   <zorder>label_12</zorder>
   <zorder>checkBox_19</zorder>
   <zorder>checkBox_20</zorder>
+  <zorder>pushButton_18</zorder>
  </widget>
  <resources/>
  <connections/>

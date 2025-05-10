@@ -26,7 +26,7 @@
     <string/>
    </property>
    <property name="pixmap">
-    <pixmap>Img/Bg login screen.jpg</pixmap>
+    <pixmap>../Img/laptops-modern-electronics-store-computer-department-technology-140964701.webp</pixmap>
    </property>
    <property name="scaledContents">
     <bool>true</bool>
@@ -66,7 +66,7 @@ border-radius: 20px;                    /* Curved edges */
     <string/>
    </property>
    <property name="pixmap">
-    <pixmap>Img/Logo.png</pixmap>
+    <pixmap>../Img/Logo.png</pixmap>
    </property>
    <property name="scaledContents">
     <bool>true</bool>
@@ -363,36 +363,13 @@ border-radius: 10px;
     <string>Log In</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="btn_eyes">
-   <property name="geometry">
-    <rect>
-     <x>590</x>
-     <y>550</y>
-     <width>41</width>
-     <height>21</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-   <property name="icon">
-    <iconset>
-     <normaloff>Img/eyes_02.png</normaloff>Img/eyes_02.png</iconset>
-   </property>
-   <property name="iconSize">
-    <size>
-     <width>64</width>
-     <height>64</height>
-    </size>
-   </property>
-  </widget>
   <widget class="QPushButton" name="pushButton">
    <property name="geometry">
     <rect>
      <x>590</x>
-     <y>460</y>
+     <y>450</y>
      <width>41</width>
-     <height>21</height>
+     <height>41</height>
     </rect>
    </property>
    <property name="text">
@@ -400,12 +377,35 @@ border-radius: 10px;
    </property>
    <property name="icon">
     <iconset>
-     <normaloff>Img/eyes_02.png</normaloff>Img/eyes_02.png</iconset>
+     <normaloff>../Img/eye-slash-regular (1).svg</normaloff>../Img/eye-slash-regular (1).svg</iconset>
    </property>
    <property name="iconSize">
     <size>
-     <width>64</width>
-     <height>64</height>
+     <width>32</width>
+     <height>32</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_2">
+   <property name="geometry">
+    <rect>
+     <x>590</x>
+     <y>540</y>
+     <width>41</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../Img/eye-slash-regular (1).svg</normaloff>../Img/eye-slash-regular (1).svg</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>32</width>
+     <height>32</height>
     </size>
    </property>
   </widget>
