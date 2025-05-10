@@ -45,69 +45,52 @@
       <bool>true</bool>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton_3">
+    <widget class="QFrame" name="frame">
      <property name="geometry">
       <rect>
-       <x>570</x>
-       <y>10</y>
-       <width>271</width>
-       <height>401</height>
+       <x>180</x>
+       <y>160</y>
+       <width>171</width>
+       <height>231</height>
       </rect>
      </property>
-     <property name="text">
-      <string/>
+     <property name="frameShape">
+      <enum>QFrame::Shape::StyledPanel</enum>
      </property>
-     <property name="icon">
-      <iconset>
-       <normaloff>Img/Product_01.png</normaloff>Img/Product_01.png</iconset>
-     </property>
-     <property name="iconSize">
-      <size>
-       <width>400</width>
-       <height>400</height>
-      </size>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="pushButton_4">
-     <property name="geometry">
-      <rect>
-       <x>20</x>
-       <y>410</y>
-       <width>401</width>
-       <height>281</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-     <property name="icon">
-      <iconset>
-       <normaloff>Img/Top Deals.png</normaloff>Img/Top Deals.png</iconset>
-     </property>
-     <property name="iconSize">
-      <size>
-       <width>400</width>
-       <height>400</height>
-      </size>
+     <property name="frameShadow">
+      <enum>QFrame::Shadow::Raised</enum>
      </property>
     </widget>
     <widget class="QLabel" name="label_13">
      <property name="geometry">
       <rect>
-       <x>450</x>
-       <y>410</y>
-       <width>371</width>
-       <height>271</height>
+       <x>30</x>
+       <y>430</y>
+       <width>461</width>
+       <height>251</height>
       </rect>
      </property>
      <property name="text">
       <string/>
      </property>
      <property name="pixmap">
-      <pixmap>Img/webp_0210_560870_lg_M119.jpg</pixmap>
+      <pixmap>Img/Lightgray.png</pixmap>
      </property>
      <property name="scaledContents">
       <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_31">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>430</y>
+       <width>49</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Top Deals By </string>
      </property>
     </widget>
    </widget>
