@@ -373,6 +373,133 @@ background:none
      </property>
     </widget>
    </widget>
+   <widget class="QWidget" name="page_6">
+    <widget class="QLabel" name="label_50">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>280</y>
+       <width>841</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">  background:none;
+font: 900 24pt &quot;Segoe UI&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Thank You for buying our Products</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_51">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>310</y>
+       <width>841</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">  background:none;
+font: 9pt &quot;Segoe UI&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Press the button below this text to go back to main page</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_21">
+     <property name="geometry">
+      <rect>
+       <x>390</x>
+       <y>370</y>
+       <width>81</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 900 9pt &quot;Segoe UI&quot;;
+background-color: rgb(255, 255, 255);
+</string>
+     </property>
+     <property name="text">
+      <string>Home</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="page_5">
+    <widget class="QLabel" name="label_46">
+     <property name="geometry">
+      <rect>
+       <x>320</x>
+       <y>430</y>
+       <width>481</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">  background:none;
+font: 900 24pt &quot;Segoe UI&quot;;</string>
+     </property>
+     <property name="text">
+      <string>We Are Sorry!</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_47">
+     <property name="geometry">
+      <rect>
+       <x>330</x>
+       <y>130</y>
+       <width>251</width>
+       <height>291</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">  background:none;
+font: 900 24pt &quot;Segoe UI&quot;;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap>../Img/images.png</pixmap>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_48">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>500</y>
+       <width>841</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">  background:none;
+font: 900 24pt &quot;Segoe UI&quot;;</string>
+     </property>
+     <property name="text">
+      <string>This Product is out of stock/sold out,Please come</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_49">
+     <property name="geometry">
+      <rect>
+       <x>330</x>
+       <y>560</y>
+       <width>841</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">  background:none;
+font: 900 24pt &quot;Segoe UI&quot;;</string>
+     </property>
+     <property name="text">
+      <string>back later!</string>
+     </property>
+    </widget>
+   </widget>
    <widget class="QWidget" name="page_3">
     <widget class="QLabel" name="label_15">
      <property name="geometry">
@@ -772,8 +899,8 @@ Learn More</string>
     <widget class="QLabel" name="label_37">
      <property name="geometry">
       <rect>
-       <x>120</x>
-       <y>110</y>
+       <x>290</x>
+       <y>60</y>
        <width>191</width>
        <height>201</height>
       </rect>
@@ -791,8 +918,8 @@ Learn More</string>
     <widget class="QLabel" name="label_38">
      <property name="geometry">
       <rect>
-       <x>350</x>
-       <y>110</y>
+       <x>500</x>
+       <y>70</y>
        <width>211</width>
        <height>41</height>
       </rect>
@@ -807,9 +934,9 @@ Learn More</string>
     <widget class="QLabel" name="label_39">
      <property name="geometry">
       <rect>
-       <x>30</x>
+       <x>280</x>
        <y>10</y>
-       <width>161</width>
+       <width>241</width>
        <height>41</height>
       </rect>
      </property>
@@ -818,15 +945,15 @@ Learn More</string>
 font: 900 24pt &quot;Segoe UI&quot;;</string>
      </property>
      <property name="text">
-      <string>User Info:</string>
+      <string>Welcome,User</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_40">
      <property name="geometry">
       <rect>
-       <x>350</x>
-       <y>170</y>
-       <width>211</width>
+       <x>500</x>
+       <y>120</y>
+       <width>111</width>
        <height>41</height>
       </rect>
      </property>
@@ -840,8 +967,8 @@ font: 900 24pt &quot;Segoe UI&quot;;</string>
     <widget class="QLabel" name="label_41">
      <property name="geometry">
       <rect>
-       <x>560</x>
-       <y>170</y>
+       <x>610</x>
+       <y>120</y>
        <width>211</width>
        <height>41</height>
       </rect>
@@ -856,8 +983,8 @@ font: 900 24pt &quot;Segoe UI&quot;;</string>
     <widget class="QLabel" name="label_42">
      <property name="geometry">
       <rect>
-       <x>350</x>
-       <y>240</y>
+       <x>500</x>
+       <y>180</y>
        <width>211</width>
        <height>41</height>
       </rect>
@@ -872,8 +999,8 @@ font: 900 24pt &quot;Segoe UI&quot;;</string>
     <widget class="QPushButton" name="pushButton_19">
      <property name="geometry">
       <rect>
-       <x>150</x>
-       <y>330</y>
+       <x>310</x>
+       <y>270</y>
        <width>141</width>
        <height>24</height>
       </rect>
@@ -885,17 +1012,17 @@ font: 900 24pt &quot;Segoe UI&quot;;</string>
     <widget class="QLabel" name="label_43">
      <property name="geometry">
       <rect>
-       <x>330</x>
-       <y>100</y>
-       <width>451</width>
-       <height>221</height>
+       <x>10</x>
+       <y>10</y>
+       <width>261</width>
+       <height>691</height>
       </rect>
      </property>
      <property name="text">
       <string/>
      </property>
      <property name="pixmap">
-      <pixmap>../Img/square.png</pixmap>
+      <pixmap>../Img/images (4).jpg</pixmap>
      </property>
      <property name="scaledContents">
       <bool>true</bool>
@@ -904,10 +1031,10 @@ font: 900 24pt &quot;Segoe UI&quot;;</string>
     <widget class="QLabel" name="label_44">
      <property name="geometry">
       <rect>
-       <x>100</x>
-       <y>100</y>
-       <width>221</width>
-       <height>221</height>
+       <x>270</x>
+       <y>10</y>
+       <width>571</width>
+       <height>291</height>
       </rect>
      </property>
      <property name="text">
@@ -920,8 +1047,49 @@ font: 900 24pt &quot;Segoe UI&quot;;</string>
       <bool>true</bool>
      </property>
     </widget>
+    <widget class="QLabel" name="label_45">
+     <property name="geometry">
+      <rect>
+       <x>290</x>
+       <y>320</y>
+       <width>561</width>
+       <height>361</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap>../Img/continebrosweing.png</pixmap>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_20">
+     <property name="geometry">
+      <rect>
+       <x>300</x>
+       <y>360</y>
+       <width>261</width>
+       <height>301</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>../Img/how-to-donate-computer-1-500x500.png</normaloff>../Img/how-to-donate-computer-1-500x500.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>300</width>
+       <height>300</height>
+      </size>
+     </property>
+    </widget>
     <zorder>label_44</zorder>
-    <zorder>label_43</zorder>
     <zorder>label_37</zorder>
     <zorder>label_38</zorder>
     <zorder>label_39</zorder>
@@ -929,6 +1097,9 @@ font: 900 24pt &quot;Segoe UI&quot;;</string>
     <zorder>label_41</zorder>
     <zorder>label_42</zorder>
     <zorder>pushButton_19</zorder>
+    <zorder>label_43</zorder>
+    <zorder>label_45</zorder>
+    <zorder>pushButton_20</zorder>
    </widget>
    <widget class="QWidget" name="page_2">
     <widget class="QLabel" name="label_14">

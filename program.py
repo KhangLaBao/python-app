@@ -158,6 +158,11 @@ class Home(QWidget):
         super().__init__()
         uic.loadUi("ui/home.ui", self)
 
+        self.stack_widget = self.findChild(QStackedWidget, "stack_widget")
+
+    def navigate_screen(self, stackWidget: QStackedWidget, index: int):
+        stackedWidget.setCurrentIndex(index)
+
 if __name__ == "__main__":
     app = QApplication([])
     msg = Alert()
