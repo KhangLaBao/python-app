@@ -158,10 +158,20 @@ class Home(QWidget):
         super().__init__()
         uic.loadUi("ui/home.ui", self)
 
-        self.stack_widget = self.findChild(QStackedWidget, "stack_widget")
+        self.stack_widget = self.findChild(QStackedWidget, "stackedWidget")
+        
+        self.btn_home = self.findChild(QPushButton, "btn_home")
+        self.btn_products = self.findChild(QPushButton, "btn_products")
+        self.btn_detail = self.findChild(QPushButton, "btn_detail")
+        self.btn_profile = self.findChild(QPushButton, "btn_profile")
+
+        self.btn_home.clicked.connect(lambda: self.navigate_screen(self.stack_widget, 0))
+        self.btn_products.clicked.connect(lambda: self.navigate_screen(self.stack_widget, 5))
+        self.btn_detail.clicked.connect(lambda: self.navigate_screen(self.stack_widget, 3))
+        self.btn_profile.clicked.connect(lambda: self.navigate_screen(self.stack_widget, 4))
 
     def navigate_screen(self, stackWidget: QStackedWidget, index: int):
-        stackedWidget.setCurrentIndex(index)
+        stackWidget.setCurrentIndex(index)
 
 if __name__ == "__main__":
     app = QApplication([])

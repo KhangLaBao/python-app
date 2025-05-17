@@ -26,9 +26,9 @@
     </rect>
    </property>
    <property name="currentIndex">
-    <number>2</number>
+    <number>0</number>
    </property>
-   <widget class="QWidget" name="page">
+   <widget class="QWidget" name="home">
     <widget class="QLabel" name="label_3">
      <property name="geometry">
       <rect>
@@ -349,7 +349,7 @@ background:none
       <bool>true</bool>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton_17">
+    <widget class="QPushButton" name="btn_product">
      <property name="geometry">
       <rect>
        <x>530</x>
@@ -500,7 +500,7 @@ font: 900 24pt &quot;Segoe UI&quot;;</string>
      </property>
     </widget>
    </widget>
-   <widget class="QWidget" name="page_3">
+   <widget class="QWidget" name="detail">
     <widget class="QLabel" name="label_15">
      <property name="geometry">
       <rect>
@@ -634,6 +634,9 @@ font: 700 12pt &quot;Segoe UI&quot;;</string>
        <width>241</width>
        <height>111</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: black;</string>
      </property>
      <property name="text">
       <string>Intel Core i5 14400F (1.8GHz) Processor
@@ -895,7 +898,7 @@ Learn More</string>
      </property>
     </widget>
    </widget>
-   <widget class="QWidget" name="page_4">
+   <widget class="QWidget" name="profile">
     <widget class="QLabel" name="label_37">
      <property name="geometry">
       <rect>
@@ -1101,7 +1104,7 @@ font: 900 24pt &quot;Segoe UI&quot;;</string>
     <zorder>label_45</zorder>
     <zorder>pushButton_20</zorder>
    </widget>
-   <widget class="QWidget" name="page_2">
+   <widget class="QWidget" name="product">
     <widget class="QLabel" name="label_14">
      <property name="geometry">
       <rect>
@@ -1119,7 +1122,7 @@ font: 900 20pt &quot;Segoe UI&quot;;</string>
       <string>Products:</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton_5">
+    <widget class="QPushButton" name="btn_detail">
      <property name="geometry">
       <rect>
        <x>10</x>
@@ -1274,7 +1277,7 @@ font: 900 20pt &quot;Segoe UI&quot;;</string>
     <bool>true</bool>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton">
+  <widget class="QPushButton" name="btn_home">
    <property name="geometry">
     <rect>
      <x>200</x>
@@ -1292,7 +1295,7 @@ background-color: rgb(255, 255, 255);
     <string>Home</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_2">
+  <widget class="QPushButton" name="btn_products">
    <property name="geometry">
     <rect>
      <x>290</x>
@@ -1795,7 +1798,7 @@ font: 900 8pt &quot;Segoe UI&quot;;</string>
     <string>LGA 1851 </string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_18">
+  <widget class="QPushButton" name="btn_profile">
    <property name="geometry">
     <rect>
      <x>940</x>
@@ -1824,8 +1827,8 @@ font: 900 8pt &quot;Segoe UI&quot;;</string>
   <zorder>label</zorder>
   <zorder>stackedWidget</zorder>
   <zorder>label_2</zorder>
-  <zorder>pushButton</zorder>
-  <zorder>pushButton_2</zorder>
+  <zorder>btn_home</zorder>
+  <zorder>btn_products</zorder>
   <zorder>label_4</zorder>
   <zorder>label_5</zorder>
   <zorder>label_6</zorder>
@@ -1855,7 +1858,7 @@ font: 900 8pt &quot;Segoe UI&quot;;</string>
   <zorder>label_12</zorder>
   <zorder>checkBox_19</zorder>
   <zorder>checkBox_20</zorder>
-  <zorder>pushButton_18</zorder>
+  <zorder>btn_profile</zorder>
  </widget>
  <resources/>
  <connections/>
