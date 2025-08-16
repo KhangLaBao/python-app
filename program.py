@@ -166,12 +166,17 @@ class Home(QWidget):
         super().__init__()
         uic.loadUi("ui/home.ui", self)
 
+        self.id = id
+        self.user = get_user_by_id(id)
+        self.load_user_info()
+
         self.stack_widget = self.findChild(QStackedWidget, "stackedWidget")
         
         self.btn_home = self.findChild(QPushButton, "btn_home")
         self.btn_products = self.findChild(QPushButton, "btn_products")
         self.btn_detail = self.findChild(QPushButton, "btn_detail")
         self.btn_profile = self.findChild(QPushButton, "btn_profile")
+        self.btn_save_account = self.findChild(QPushButton, "btn_save_account")
 
         self.btn_home.clicked.connect(lambda: self.navigate_screen(self.stack_widget, 0))
         self.btn_products.clicked.connect(lambda: self.navigate_screen(self.stack_widget, 5))
