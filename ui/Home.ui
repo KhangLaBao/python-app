@@ -26,7 +26,7 @@
     </rect>
    </property>
    <property name="currentIndex">
-    <number>0</number>
+    <number>4</number>
    </property>
    <widget class="QWidget" name="home">
     <widget class="QLabel" name="label_3">
@@ -899,41 +899,6 @@ Learn More</string>
     </widget>
    </widget>
    <widget class="QWidget" name="profile">
-    <widget class="QLabel" name="label_37">
-     <property name="geometry">
-      <rect>
-       <x>290</x>
-       <y>60</y>
-       <width>191</width>
-       <height>201</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-     <property name="pixmap">
-      <pixmap>../Img/user-regular.svg</pixmap>
-     </property>
-     <property name="scaledContents">
-      <bool>true</bool>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_38">
-     <property name="geometry">
-      <rect>
-       <x>500</x>
-       <y>70</y>
-       <width>211</width>
-       <height>41</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">font: 600 18pt &quot;Segoe UI&quot;;</string>
-     </property>
-     <property name="text">
-      <string>Name:</string>
-     </property>
-    </widget>
     <widget class="QLabel" name="label_39">
      <property name="geometry">
       <rect>
@@ -951,65 +916,17 @@ font: 900 24pt &quot;Segoe UI&quot;;</string>
       <string>Welcome,User</string>
      </property>
     </widget>
-    <widget class="QLabel" name="label_40">
+    <widget class="QPushButton" name="btn_avatar">
      <property name="geometry">
       <rect>
-       <x>500</x>
-       <y>120</y>
-       <width>111</width>
-       <height>41</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">font: 600 18pt &quot;Segoe UI&quot;;</string>
-     </property>
-     <property name="text">
-      <string>Age:</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_41">
-     <property name="geometry">
-      <rect>
-       <x>610</x>
-       <y>120</y>
-       <width>211</width>
-       <height>41</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">font: 600 18pt &quot;Segoe UI&quot;;</string>
-     </property>
-     <property name="text">
-      <string>Gender:</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_42">
-     <property name="geometry">
-      <rect>
-       <x>500</x>
-       <y>180</y>
-       <width>211</width>
-       <height>41</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">font: 600 18pt &quot;Segoe UI&quot;;</string>
-     </property>
-     <property name="text">
-      <string>Email:</string>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="pushButton_19">
-     <property name="geometry">
-      <rect>
-       <x>310</x>
-       <y>270</y>
-       <width>141</width>
-       <height>24</height>
+       <x>280</x>
+       <y>70</y>
+       <width>191</width>
+       <height>181</height>
       </rect>
      </property>
      <property name="text">
-      <string>Click to change avatar!</string>
+      <string/>
      </property>
     </widget>
     <widget class="QLabel" name="label_43">
@@ -1092,17 +1009,71 @@ font: 900 24pt &quot;Segoe UI&quot;;</string>
       </size>
      </property>
     </widget>
+    <widget class="QComboBox" name="comboBox">
+     <property name="geometry">
+      <rect>
+       <x>640</x>
+       <y>130</y>
+       <width>171</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <item>
+      <property name="text">
+       <string>Male</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Female</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Other</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLineEdit" name="txt_name">
+     <property name="geometry">
+      <rect>
+       <x>480</x>
+       <y>70</y>
+       <width>113</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="txt_email">
+     <property name="geometry">
+      <rect>
+       <x>480</x>
+       <y>130</y>
+       <width>113</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="txt_Birthday">
+     <property name="geometry">
+      <rect>
+       <x>480</x>
+       <y>200</y>
+       <width>113</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
     <zorder>label_44</zorder>
-    <zorder>label_37</zorder>
-    <zorder>label_38</zorder>
     <zorder>label_39</zorder>
-    <zorder>label_40</zorder>
-    <zorder>label_41</zorder>
-    <zorder>label_42</zorder>
-    <zorder>pushButton_19</zorder>
+    <zorder>btn_avatar</zorder>
     <zorder>label_43</zorder>
     <zorder>label_45</zorder>
     <zorder>pushButton_20</zorder>
+    <zorder>comboBox</zorder>
+    <zorder>txt_name</zorder>
+    <zorder>txt_email</zorder>
+    <zorder>txt_Birthday</zorder>
    </widget>
    <widget class="QWidget" name="product">
     <widget class="QLabel" name="label_14">
