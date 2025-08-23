@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "name": "Intel Inisde 3 DELL 32GB RAM,120gb HDD Office Computer",
+        "rating": 4.9,
+        "image": "Img/imagecomputer2"
+    },
+    {
+        "id": 2,
+        "name": "Intel Core i5 Compaq 64GB RAM,150gb HDD Gaming Computer",
+        "rating": 5.0,
+        "image": "Img/imagecomputer1"
+    },
+    {
+        "id": 3,
+        "name": "Intel Pentium 4 DELL 8GB RAM,100gb HDD Office Computer",
+        "rating": 4.0,
+        "image": "Img/imagecomputer3"
+    },
+    {
+        "id": 4,
+        "name": "Intel Pentium 6 DELL 64GB RAM,500gb HDD SUPER Gaming Computer",
+        "rating": 5.0,
+        "image": "Img/imagecomputer4"
+    }
+    {
+        "id": 5,
+        "name": "Intel Pentium 3 DELL 8GB RAM,50gb HDD Office Computer",
+        "rating": 3.9,
+        "image": "Img/imagecomputer5"
+    }
+]
