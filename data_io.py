@@ -39,9 +39,9 @@ def get_user_by_email   (email):
 def get_user_by_email_and_password(email,password):
     users = load_json("data/users.json")
     for user in users:
-            if user["email"] == email and user["password"] == password:
-                return user
-            return None
+        if user["email"] == email and user["password"] == password:
+            return user
+        return None
 
 def update_user(id, name,birthday = "", gender = "None"):
     users = load_json("data/users.json")

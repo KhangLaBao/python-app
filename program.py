@@ -53,21 +53,11 @@ class Login(QWidget):
             msg.error_message("Login", "Password is required")
             self.password_input.setFocus()
             return
-        
-        with open("data/users.txt", "r") as file:
-            for line in file:
-                data = line.strip().split(",")
-                if data[0] == email and data[1] == password:
-                    msg.success_message("Login", "Welcome to the system")
-                    self.show_home(user["id"])
-                    return
-            
         user = get_user_by_email_and_password(email, password)
         if user:
             msg.success_message("Login", "Welcome to the system")
             self.show_home(user["id"])
-            return
-        
+            return        
         
         msg.error_message("Login", "Invalid email or password")
         self.email_input.setFocus()
@@ -216,6 +206,5 @@ if __name__ == "__main__":
     app = QApplication([])
     msg = Alert()
     window = Login()
-    window = Home(1)
     window.show()
     app.exec()
