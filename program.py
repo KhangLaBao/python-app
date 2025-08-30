@@ -466,6 +466,5 @@ if __name__ == "__main__":
     app = QApplication([])
     msg = Alert()
     window = Login()
-    window = Home(1)
     window.show()
     app.exec()
