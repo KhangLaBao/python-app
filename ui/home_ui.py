@@ -274,17 +274,39 @@ class Ui_Form(object):
         self.lbl_price_strikethrough.setObjectName("lbl_price_strikethrough")
         self.btn_add_to_cart = QtWidgets.QPushButton(parent=self.detail)
         self.btn_add_to_cart.setGeometry(QtCore.QRect(100, 630, 191, 41))
-        self.btn_add_to_cart.setStyleSheet("color: rgb(255, 255, 255);\n"
-"background-color: rgb(0, 85, 255);\n"
-"border-radius: 10px;\n"
-"font: 18pt \"Segoe UI\";")
+        self.btn_add_to_cart.setStyleSheet("QPushButton {\n"
+"    background-color: #28a745;\n"
+"    color: white;\n"
+"    border: none;\n"
+"    border-radius: 10px;\n"
+"    font: 18pt \"Segoe UI\";\n"
+"    font-weight: bold;\n"
+"}\n"
+"QPushButton:hover {\n"
+"    background-color: #218838;\n"
+"    transform: scale(1.05);\n"
+"}\n"
+"QPushButton:pressed {\n"
+"    background-color: #1e7e34;\n"
+"}")
         self.btn_add_to_cart.setObjectName("btn_add_to_cart")
         self.btn_buy_now = QtWidgets.QPushButton(parent=self.detail)
         self.btn_buy_now.setGeometry(QtCore.QRect(350, 630, 191, 41))
-        self.btn_buy_now.setStyleSheet("color: rgb(255, 255, 255);\n"
-"background-color: rgb(0, 0, 127);\n"
-"border-radius: 10px;\n"
-"font: 18pt \"Segoe UI\";")
+        self.btn_buy_now.setStyleSheet("QPushButton {\n"
+"    background-color: #dc3545;\n"
+"    color: white;\n"
+"    border: none;\n"
+"    border-radius: 10px;\n"
+"    font: 18pt \"Segoe UI\";\n"
+"    font-weight: bold;\n"
+"}\n"
+"QPushButton:hover {\n"
+"    background-color: #c82333;\n"
+"    transform: scale(1.05);\n"
+"}\n"
+"QPushButton:pressed {\n"
+"    background-color: #bd2130;\n"
+"}")
         self.btn_buy_now.setObjectName("btn_buy_now")
         self.btn_credit_card_info = QtWidgets.QPushButton(parent=self.detail)
         self.btn_credit_card_info.setGeometry(QtCore.QRect(550, 590, 311, 91))

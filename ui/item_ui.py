@@ -13,7 +13,15 @@ class Ui_Form(object):
     def setupUi(self, Form):
         Form.setObjectName("Form")
         Form.resize(261, 301)
-        Form.setStyleSheet("background-color: rgb(255, 255, 255);")
+        Form.setStyleSheet("QWidget {\n"
+"    background-color: white;\n"
+"    border: 1px solid #e0e0e0;\n"
+"    border-radius: 8px;\n"
+"}\n"
+"QWidget:hover {\n"
+"    border: 2px solid #007bff;\n"
+"    box-shadow: 0 2px 8px rgba(0,0,0,0.1);\n"
+"}")
         self.line_top = QtWidgets.QFrame(parent=Form)
         self.line_top.setGeometry(QtCore.QRect(10, 0, 241, 20))
         self.line_top.setFrameShape(QtWidgets.QFrame.Shape.HLine)
@@ -49,12 +57,51 @@ class Ui_Form(object):
         self.gridLayout_2 = QtWidgets.QGridLayout(self.gridLayoutWidget)
         self.gridLayout_2.setContentsMargins(0, 0, 0, 0)
         self.gridLayout_2.setObjectName("gridLayout_2")
-        self.btn_view_detail = QtWidgets.QPushButton(parent=self.gridLayoutWidget)
-        self.btn_view_detail.setObjectName("btn_view_detail")
-        self.gridLayout_2.addWidget(self.btn_view_detail, 1, 1, 1, 1)
         self.btn_add_to_cart = QtWidgets.QPushButton(parent=self.gridLayoutWidget)
+        self.btn_add_to_cart.setStyleSheet("QPushButton {\n"
+"    background-color: #28a745;\n"
+"    color: white;\n"
+"    border: none;\n"
+"    border-radius: 4px;\n"
+"    padding: 6px 12px;\n"
+"    font-weight: bold;\n"
+"    font-size: 10px;\n"
+"}\n"
+"QPushButton:hover {\n"
+"    background-color: #218838;\n"
+"}")
         self.btn_add_to_cart.setObjectName("btn_add_to_cart")
-        self.gridLayout_2.addWidget(self.btn_add_to_cart, 1, 0, 1, 1)
+        self.gridLayout_2.addWidget(self.btn_add_to_cart, 0, 0, 1, 1)
+        self.btn_buy_now = QtWidgets.QPushButton(parent=self.gridLayoutWidget)
+        self.btn_buy_now.setStyleSheet("QPushButton {\n"
+"    background-color: #dc3545;\n"
+"    color: white;\n"
+"    border: none;\n"
+"    border-radius: 4px;\n"
+"    padding: 6px 12px;\n"
+"    font-weight: bold;\n"
+"    font-size: 10px;\n"
+"}\n"
+"QPushButton:hover {\n"
+"    background-color: #c82333;\n"
+"}")
+        self.btn_buy_now.setObjectName("btn_buy_now")
+        self.gridLayout_2.addWidget(self.btn_buy_now, 0, 1, 1, 1)
+        self.btn_view_detail = QtWidgets.QPushButton(parent=self.gridLayoutWidget)
+        self.btn_view_detail.setStyleSheet("QPushButton {\n"
+"    background-color: #007bff;\n"
+"    color: white;\n"
+"    border: none;\n"
+"    border-radius: 4px;\n"
+"    padding: 6px 12px;\n"
+"    font-weight: bold;\n"
+"    font-size: 10px;\n"
+"}\n"
+"QPushButton:hover {\n"
+"    background-color: #0056b3;\n"
+"}")
+        self.btn_view_detail.setObjectName("btn_view_detail")
+        self.gridLayout_2.addWidget(self.btn_view_detail, 1, 0, 1, 2)
         self.lbl_rating = QtWidgets.QLabel(parent=Form)
         self.lbl_rating.setGeometry(QtCore.QRect(180, 200, 49, 16))
         self.lbl_rating.setObjectName("lbl_rating")
@@ -86,7 +133,8 @@ class Ui_Form(object):
         _translate = QtCore.QCoreApplication.translate
         Form.setWindowTitle(_translate("Form", "Form"))
         self.lbl_product_name.setText(_translate("Form", "Intel CORE i5 32GB Ram DELL Desktop C..."))
-        self.btn_view_detail.setText(_translate("Form", "View Detail"))
         self.btn_add_to_cart.setText(_translate("Form", "Add to Cart"))
+        self.btn_buy_now.setText(_translate("Form", "Buy Now"))
+        self.btn_view_detail.setText(_translate("Form", "View Detail"))
         self.lbl_rating.setText(_translate("Form", "4.6"))
         self.lbl_price.setText(_translate("Form", "999.999.999 VND"))

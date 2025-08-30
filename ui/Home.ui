@@ -816,10 +816,21 @@ background:none</string>
       </rect>
      </property>
      <property name="styleSheet">
-      <string notr="true">color: rgb(255, 255, 255);
-background-color: rgb(0, 85, 255);
-border-radius: 10px;
-font: 18pt &quot;Segoe UI&quot;;</string>
+      <string notr="true">QPushButton {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font: 18pt "Segoe UI";
+    font-weight: bold;
+}
+QPushButton:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+QPushButton:pressed {
+    background-color: #1e7e34;
+}</string>
      </property>
      <property name="text">
       <string>Add To Cart</string>
@@ -835,10 +846,21 @@ font: 18pt &quot;Segoe UI&quot;;</string>
       </rect>
      </property>
      <property name="styleSheet">
-      <string notr="true">color: rgb(255, 255, 255);
-background-color: rgb(0, 0, 127);
-border-radius: 10px;
-font: 18pt &quot;Segoe UI&quot;;</string>
+      <string notr="true">QPushButton {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font: 18pt "Segoe UI";
+    font-weight: bold;
+}
+QPushButton:hover {
+    background-color: #c82333;
+    transform: scale(1.05);
+}
+QPushButton:pressed {
+    background-color: #bd2130;
+}</string>
      </property>
      <property name="text">
       <string>Buy Now</string>

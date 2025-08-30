@@ -14,7 +14,15 @@
    <string>Form</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color: rgb(255, 255, 255);</string>
+   <string notr="true">QWidget {
+    background-color: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+}
+QWidget:hover {
+    border: 2px solid #007bff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}</string>
   </property>
   <widget class="Line" name="line_top">
    <property name="geometry">
@@ -110,17 +118,66 @@
     </rect>
    </property>
    <layout class="QGridLayout" name="gridLayout_2">
-    <item row="1" column="1">
-     <widget class="QPushButton" name="btn_view_detail">
+    <item row="0" column="0">
+     <widget class="QPushButton" name="btn_add_to_cart">
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 6px 12px;
+    font-weight: bold;
+    font-size: 10px;
+}
+QPushButton:hover {
+    background-color: #218838;
+}</string>
+      </property>
       <property name="text">
-       <string>View Detail</string>
+       <string>Add to Cart</string>
       </property>
      </widget>
     </item>
-    <item row="1" column="0">
-     <widget class="QPushButton" name="btn_add_to_cart">
+    <item row="0" column="1">
+     <widget class="QPushButton" name="btn_buy_now">
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 6px 12px;
+    font-weight: bold;
+    font-size: 10px;
+}
+QPushButton:hover {
+    background-color: #c82333;
+}</string>
+      </property>
       <property name="text">
-       <string>Add to Cart</string>
+       <string>Buy Now</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0" colspan="2">
+     <widget class="QPushButton" name="btn_view_detail">
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 6px 12px;
+    font-weight: bold;
+    font-size: 10px;
+}
+QPushButton:hover {
+    background-color: #0056b3;
+}</string>
+      </property>
+      <property name="text">
+       <string>View Detail</string>
       </property>
      </widget>
     </item>

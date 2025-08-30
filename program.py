@@ -156,32 +156,7 @@ class ItemWidget(QWidget):
         # Set fixed size for consistent layout
         self.setFixedSize(280, 320)
         
-        # Set style for better appearance
-        self.setStyleSheet("""
-            QWidget {
-                background-color: white;
-                border: 1px solid #e0e0e0;
-                border-radius: 8px;
-            }
-            QWidget:hover {
-                border: 2px solid #007bff;
-                box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-            }
-            QPushButton {
-                background-color: #007bff;
-                color: white;
-                border: none;
-                border-radius: 4px;
-                padding: 8px 16px;
-                font-weight: bold;
-            }
-            QPushButton:hover {
-                background-color: #0056b3;
-            }
-            QPushButton:pressed {
-                background-color: #004085;
-            }
-        """)
+
         
         # Connect widgets
         self.lbl_product_name = self.findChild(QLabel, "lbl_product_name")
@@ -191,10 +166,12 @@ class ItemWidget(QWidget):
         self.lbl_price = self.findChild(QLabel, "lbl_price")
         self.btn_view_detail = self.findChild(QPushButton, "btn_view_detail")
         self.btn_add_to_cart = self.findChild(QPushButton, "btn_add_to_cart")
+        self.btn_buy_now = self.findChild(QPushButton, "btn_buy_now")
         
         # Connect signals
         self.btn_view_detail.clicked.connect(self.view_detail)
         self.btn_add_to_cart.clicked.connect(self.add_to_cart)
+        self.btn_buy_now.clicked.connect(self.buy_now)
         
         # Load product data
         self.load_product_data()
@@ -264,7 +241,32 @@ class ItemWidget(QWidget):
     def add_to_cart(self):
         """Add product to cart"""
         if self.product_data:
-            msg.success_message("Cart", f"Added {self.product_data.get('name', 'Product')} to cart")
+            product_name = self.product_data.get('name', 'Product')
+            price = self.product_data.get('price', 0)
+            formatted_price = f"{price:,} VNĐ"
+            msg.success_message("Giỏ hàng", f"Đã thêm {product_name} vào giỏ hàng\nGiá: {formatted_price}")
+    
+    def buy_now(self):
+        """Buy product immediately"""
+        if self.product_data:
+            product_name = self.product_data.get('name', 'Product')
+            price = self.product_data.get('price', 0)
+            formatted_price = f"{price:,} VNĐ"
+            
+            # Create custom success message
+            reply = QMessageBox.question(
+                self, 
+                "Xác nhận mua hàng", 
+                f"Bạn có chắc chắn muốn mua {product_name}?\nGiá: {formatted_price}",
+                QMessageBox.StandardButton.Yes | QMessageBox.StandardButton.No,
+                QMessageBox.StandardButton.No
+            )
+            
+            if reply == QMessageBox.StandardButton.Yes:
+                msg.success_message(
+                    "🎉 Mua hàng thành công!", 
+                    f"✅ Bạn đã mua thành công {product_name}\n💰 Tổng tiền: {formatted_price}\n🚚 Đơn hàng sẽ được giao trong 2-3 ngày\n🙏 Cảm ơn bạn đã mua hàng!"
+                )
 
 class Home(QWidget):
     def __init__(self, id):
@@ -297,6 +299,9 @@ class Home(QWidget):
         self.btn_avatar.clicked.connect(self.update_avatar)
         self.btn_save_account.clicked.connect(self.update_user_info)
         
+        # Connect detail page buttons
+        self.connect_detail_page_buttons()
+        
         # Load products data
         self.load_products()
         
@@ -306,6 +311,9 @@ class Home(QWidget):
     def navigate_to_detail(self, product_data):
         """Navigate to product detail page and load product data"""
         self.navigate_screen(self.stack_widget, 3)
+        
+        # Store current product data for detail page actions
+        self.current_detail_product = product_data
         
         # Load product data into detail page
         try:
@@ -362,17 +370,83 @@ class Home(QWidget):
                 specs = product_data.get("specifications", {})
                 if specs:
                     specs_text = f"""
-{specs.get('processor', '')}
-{specs.get('ram', '')}
-{specs.get('storage', '')}
-{specs.get('graphics', '')}
-{specs.get('os', '')}
-{specs.get('ports', '')}
+• {specs.get('processor', '')}
+• {specs.get('ram', '')}
+• {specs.get('storage', '')}
+• {specs.get('graphics', '')}
+• {specs.get('os', '')}
+• {specs.get('ports', '')}
                     """.strip()
                     specs_label.setText(specs_text)
+            
+            # Update rating stars
+            rating_stars = detail_page.findChild(QLabel, "lbl_rating_stars")
+            if rating_stars and product_data:
+                rating = product_data.get("rating", 0)
+                try:
+                    star_path = "img/4.1 star.png"
+                    pixmap = QPixmap(star_path)
+                    if not pixmap.isNull():
+                        rating_stars.setPixmap(pixmap.scaled(141, 31, Qt.AspectRatioMode.KeepAspectRatio, Qt.TransformationMode.SmoothTransformation))
+                except:
+                    pass
                     
         except Exception as e:
-            print(f"Error loading product detail: {e}")
+                            print(f"Error loading product detail: {e}")
+    
+    def connect_detail_page_buttons(self):
+        """Connect detail page buttons to their respective functions"""
+        try:
+            detail_page = self.stack_widget.widget(3)  # Index 3 is detail page
+            
+            # Find buttons
+            btn_add_to_cart = detail_page.findChild(QPushButton, "btn_add_to_cart")
+            btn_buy_now = detail_page.findChild(QPushButton, "btn_buy_now")
+            
+            # Connect signals
+            if btn_add_to_cart:
+                btn_add_to_cart.clicked.connect(self.detail_add_to_cart)
+            if btn_buy_now:
+                btn_buy_now.clicked.connect(self.detail_buy_now)
+                
+        except Exception as e:
+            print(f"Error connecting detail page buttons: {e}")
+    
+    def detail_add_to_cart(self):
+        """Add product to cart from detail page"""
+        if hasattr(self, 'current_detail_product') and self.current_detail_product:
+            product_data = self.current_detail_product
+            product_name = product_data.get('name', 'Product')
+            price = product_data.get('price', 0)
+            formatted_price = f"{price:,} VNĐ"
+            
+            msg.success_message(
+                "🛒 Giỏ hàng", 
+                f"✅ Đã thêm {product_name} vào giỏ hàng\n💰 Giá: {formatted_price}\n📦 Sản phẩm đã được lưu trong giỏ hàng của bạn"
+            )
+    
+    def detail_buy_now(self):
+        """Buy product immediately from detail page"""
+        if hasattr(self, 'current_detail_product') and self.current_detail_product:
+            product_data = self.current_detail_product
+            product_name = product_data.get('name', 'Product')
+            price = product_data.get('price', 0)
+            formatted_price = f"{price:,} VNĐ"
+            
+            # Create custom success message
+            reply = QMessageBox.question(
+                self, 
+                "🛍️ Xác nhận mua hàng", 
+                f"Bạn có chắc chắn muốn mua {product_name}?\n💰 Giá: {formatted_price}",
+                QMessageBox.StandardButton.Yes | QMessageBox.StandardButton.No,
+                QMessageBox.StandardButton.No
+            )
+            
+            if reply == QMessageBox.StandardButton.Yes:
+                msg.success_message(
+                    "🎉 Mua hàng thành công!", 
+                    f"✅ Bạn đã mua thành công {product_name}\n💰 Tổng tiền: {formatted_price}\n🚚 Đơn hàng sẽ được giao trong 2-3 ngày\n📞 Liên hệ: 1900-xxxx để theo dõi đơn hàng\n🙏 Cảm ơn bạn đã mua hàng!"
+                )
         
     def load_products(self):
         """Load products from JSON and create ItemWidget instances"""
@@ -466,5 +540,6 @@ if __name__ == "__main__":
     app = QApplication([])
     msg = Alert()
     window = Login()
+    window = Home(1)
     window.show()
     app.exec()
