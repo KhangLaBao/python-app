@@ -192,12 +192,7 @@ background:none
        <bool>true</bool>
       </property>
      </widget>
-     <zorder>label_13</zorder>
-     <zorder>label_31</zorder>
-     <zorder>label_33</zorder>
-     <zorder>pushButton_13</zorder>
-     <zorder>pushButton_4</zorder>
-     <zorder>pushButton_3</zorder>
+
     </widget>
     <widget class="QFrame" name="frame_2">
      <property name="geometry">
@@ -324,11 +319,7 @@ background:none
        </size>
       </property>
      </widget>
-     <zorder>label_34</zorder>
-     <zorder>label_35</zorder>
-     <zorder>pushButton_16</zorder>
-     <zorder>pushButton_15</zorder>
-     <zorder>pushButton_14</zorder>
+
     </widget>
     <widget class="QLabel" name="label_36">
      <property name="geometry">
@@ -501,7 +492,7 @@ font: 900 24pt &quot;Segoe UI&quot;;</string>
     </widget>
    </widget>
    <widget class="QWidget" name="detail">
-    <widget class="QLabel" name="label_15">
+    <widget class="QLabel" name="lbl_product_image">
      <property name="geometry">
       <rect>
        <x>40</x>
@@ -523,7 +514,7 @@ font: 900 24pt &quot;Segoe UI&quot;;</string>
       <bool>true</bool>
      </property>
     </widget>
-    <widget class="QLabel" name="label_16">
+    <widget class="QLabel" name="lbl_product_name">
      <property name="geometry">
       <rect>
        <x>30</x>
@@ -540,7 +531,7 @@ font: 900 20pt &quot;Segoe UI&quot;;</string>
       <string>CyberpowerPC Gamer Xtreme GXi4600M PC</string>
      </property>
     </widget>
-    <widget class="QLabel" name="label_17">
+    <widget class="QLabel" name="lbl_product_description">
      <property name="geometry">
       <rect>
        <x>30</x>
@@ -553,7 +544,7 @@ font: 900 20pt &quot;Segoe UI&quot;;</string>
       <string>Intel Core i5 14th Gen 14400F 1.8GHz Processor; Intel Arc B580 12GB GDDR6; 32GB DDR5-6000 RAM; 1TB Solid State Drive</string>
      </property>
     </widget>
-    <widget class="QLabel" name="label_18">
+    <widget class="QLabel" name="lbl_rating_stars">
      <property name="geometry">
       <rect>
        <x>30</x>
@@ -575,7 +566,7 @@ font: 900 20pt &quot;Segoe UI&quot;;</string>
       <bool>true</bool>
      </property>
     </widget>
-    <widget class="QLabel" name="label_19">
+    <widget class="QLabel" name="lbl_separator_1">
      <property name="geometry">
       <rect>
        <x>10</x>
@@ -588,7 +579,7 @@ font: 900 20pt &quot;Segoe UI&quot;;</string>
       <string>________________________________________________________________________________________________________________________________________________________________________</string>
      </property>
     </widget>
-    <widget class="QLabel" name="label_20">
+    <widget class="QLabel" name="lbl_key_features_title">
      <property name="geometry">
       <rect>
        <x>440</x>
@@ -613,7 +604,7 @@ font: 700 12pt &quot;Segoe UI&quot;;</string>
       <string>Key Features</string>
      </property>
     </widget>
-    <widget class="QLabel" name="label_21">
+    <widget class="QLabel" name="lbl_separator_2">
      <property name="geometry">
       <rect>
        <x>440</x>
@@ -626,7 +617,7 @@ font: 700 12pt &quot;Segoe UI&quot;;</string>
       <string>__________________________________________________________________</string>
      </property>
     </widget>
-    <widget class="QLabel" name="label_22">
+    <widget class="QLabel" name="lbl_key_features_content">
      <property name="geometry">
       <rect>
        <x>440</x>
@@ -647,7 +638,7 @@ Gigabit LAN, WiFi 5 (802.11ac), Bluetooth 4.2
 Windows XP Pro SP3 64 Bit</string>
      </property>
     </widget>
-    <widget class="QLabel" name="label_23">
+    <widget class="QLabel" name="lbl_support_title">
      <property name="geometry">
       <rect>
        <x>440</x>
@@ -672,7 +663,7 @@ font: 700 12pt &quot;Segoe UI&quot;;</string>
       <string>Protect and Support </string>
      </property>
     </widget>
-    <widget class="QLabel" name="label_24">
+    <widget class="QLabel" name="lbl_separator_3">
      <property name="geometry">
       <rect>
        <x>440</x>
@@ -685,7 +676,7 @@ font: 700 12pt &quot;Segoe UI&quot;;</string>
       <string>__________________________________________________________________</string>
      </property>
     </widget>
-    <widget class="QLabel" name="label_25">
+    <widget class="QLabel" name="lbl_support_content">
      <property name="geometry">
       <rect>
        <x>430</x>
@@ -698,7 +689,7 @@ font: 700 12pt &quot;Segoe UI&quot;;</string>
       <string>Free 60 Day Tech Support</string>
      </property>
     </widget>
-    <widget class="QLabel" name="label_26">
+    <widget class="QLabel" name="lbl_addons_title">
      <property name="geometry">
       <rect>
        <x>440</x>
@@ -723,7 +714,7 @@ font: 700 12pt &quot;Segoe UI&quot;;</string>
       <string>Add Ons</string>
      </property>
     </widget>
-    <widget class="QLabel" name="label_27">
+    <widget class="QLabel" name="lbl_separator_4">
      <property name="geometry">
       <rect>
        <x>440</x>
@@ -736,7 +727,7 @@ font: 700 12pt &quot;Segoe UI&quot;;</string>
       <string>__________________________________________________________________</string>
      </property>
     </widget>
-    <widget class="QCheckBox" name="checkBox_21">
+    <widget class="QCheckBox" name="chk_addon_monitor_1">
      <property name="geometry">
       <rect>
        <x>390</x>
@@ -749,7 +740,7 @@ font: 700 12pt &quot;Segoe UI&quot;;</string>
       <string>Compaq KA272 Ebi 27&quot; Full HD (1290 x 900) 100Hz CRT Monitor        200.000VNĐ</string>
      </property>
     </widget>
-    <widget class="QCheckBox" name="checkBox_22">
+    <widget class="QCheckBox" name="chk_addon_monitor_2">
      <property name="geometry">
       <rect>
        <x>370</x>
@@ -762,7 +753,7 @@ font: 700 12pt &quot;Segoe UI&quot;;</string>
       <string>Dell True Color KA272 Ebi 27&quot; Full HD (1290 x 900) 100Hz CRT Monitor        250.000VNĐ</string>
      </property>
     </widget>
-    <widget class="QLabel" name="label_28">
+    <widget class="QLabel" name="lbl_current_price">
      <property name="geometry">
       <rect>
        <x>90</x>
@@ -780,7 +771,7 @@ color:rgb(0, 170, 0)</string>
       <string>VNĐ 1.500.000</string>
      </property>
     </widget>
-    <widget class="QLabel" name="label_29">
+    <widget class="QLabel" name="lbl_original_price">
      <property name="geometry">
       <rect>
        <x>420</x>
@@ -797,7 +788,7 @@ color: rgb(255, 0, 0);</string>
       <string>VNĐ 3.000.000</string>
      </property>
     </widget>
-    <widget class="QLabel" name="label_30">
+    <widget class="QLabel" name="lbl_price_strikethrough">
      <property name="geometry">
       <rect>
        <x>390</x>
@@ -815,7 +806,7 @@ background:none</string>
       <string>___________________________</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton_10">
+    <widget class="QPushButton" name="btn_add_to_cart">
      <property name="geometry">
       <rect>
        <x>100</x>
@@ -834,7 +825,7 @@ font: 18pt &quot;Segoe UI&quot;;</string>
       <string>Add To Cart</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton_11">
+    <widget class="QPushButton" name="btn_buy_now">
      <property name="geometry">
       <rect>
        <x>350</x>
@@ -853,7 +844,7 @@ font: 18pt &quot;Segoe UI&quot;;</string>
       <string>Buy Now</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton_12">
+    <widget class="QPushButton" name="btn_credit_card_info">
      <property name="geometry">
       <rect>
        <x>550</x>
@@ -875,7 +866,7 @@ Compu-Shop Insider® Credit Card. (regular terms apply)
 Learn More</string>
      </property>
     </widget>
-    <widget class="QLabel" name="label_32">
+    <widget class="QLabel" name="lbl_rating_stars_duplicate">
      <property name="geometry">
       <rect>
        <x>30</x>
@@ -1077,17 +1068,7 @@ font: 900 24pt &quot;Segoe UI&quot;;</string>
       <string>PushButton</string>
      </property>
     </widget>
-    <zorder>label_44</zorder>
-    <zorder>label_39</zorder>
-    <zorder>btn_avatar</zorder>
-    <zorder>label_43</zorder>
-    <zorder>label_45</zorder>
-    <zorder>pushButton_20</zorder>
-    <zorder>txt_gender</zorder>
-    <zorder>txt_name</zorder>
-    <zorder>txt_email</zorder>
-    <zorder>txt_birthday</zorder>
-    <zorder>btn_save_account</zorder>
+
    </widget>
    <widget class="QWidget" name="product">
     <widget class="QLabel" name="label_14">
@@ -1809,41 +1790,7 @@ font: 900 8pt &quot;Segoe UI&quot;;</string>
     </size>
    </property>
   </widget>
-  <zorder>label</zorder>
-  <zorder>stackedWidget</zorder>
-  <zorder>label_2</zorder>
-  <zorder>btn_home</zorder>
-  <zorder>btn_products</zorder>
-  <zorder>label_4</zorder>
-  <zorder>label_5</zorder>
-  <zorder>label_6</zorder>
-  <zorder>checkBox</zorder>
-  <zorder>label_7</zorder>
-  <zorder>checkBox_2</zorder>
-  <zorder>checkBox_3</zorder>
-  <zorder>label_8</zorder>
-  <zorder>checkBox_4</zorder>
-  <zorder>checkBox_5</zorder>
-  <zorder>checkBox_6</zorder>
-  <zorder>checkBox_7</zorder>
-  <zorder>checkBox_8</zorder>
-  <zorder>checkBox_10</zorder>
-  <zorder>checkBox_9</zorder>
-  <zorder>checkBox_11</zorder>
-  <zorder>label_9</zorder>
-  <zorder>checkBox_12</zorder>
-  <zorder>checkBox_13</zorder>
-  <zorder>label_10</zorder>
-  <zorder>checkBox_14</zorder>
-  <zorder>checkBox_15</zorder>
-  <zorder>checkBox_16</zorder>
-  <zorder>label_11</zorder>
-  <zorder>checkBox_17</zorder>
-  <zorder>checkBox_18</zorder>
-  <zorder>label_12</zorder>
-  <zorder>checkBox_19</zorder>
-  <zorder>checkBox_20</zorder>
-  <zorder>btn_profile</zorder>
+
  </widget>
  <resources/>
  <connections/>
